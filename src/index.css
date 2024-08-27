@@ -280,11 +280,10 @@ ul {
 PROJECT CSS
 =============
 */
-
-body {
+body{
   background: var(--grey-200);
 }
-.hero {
+.hero{
   min-height: 40vh;
   background: var(--white);
   display: flex;
@@ -292,10 +291,10 @@ body {
   justify-content: center;
   padding: 5rem;
 }
-.img-container {
+.img-container{
   display: none;
 }
-.hero-center {
+.hero-center{
   width: 90vw;
   max-width: var(--max-width);
 }
@@ -305,17 +304,19 @@ body {
 }
 .hero-title p {
   line-height: 2;
-  max-width: 35em;
+  max-width: 35rem;
+  font-weight: 400;
   color: var(--grey-600);
 }
-@media (min-width: 992px) {
-  .hero-center {
+
+@media (min-width:992px) {
+  .hero-center{
     display: grid;
     grid-template-columns: 2fr 1fr;
     place-items: center;
     gap: 4rem;
   }
-  .img-container {
+  .img-container{
     display: block;
   }
 }
@@ -324,49 +325,49 @@ body {
 PROJECTS 
 =============
 */
-
 .projects {
   padding: 5rem 0;
 }
-.projects-center {
-  width: 90vw;
+.projects-center{
+  width: 90vw ;
   max-width: var(--max-width);
   margin: 0 auto;
   margin-top: 3rem;
   display: grid;
-  gap: 2rem;
+  gap: 2rem
 }
-.project {
+.project{
   background: var(--white);
   display: block;
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
   transition: var(--transition);
 }
-.project:hover {
+.project:hover{
   transform: scale(1.05);
   box-shadow: var(--shadow-4);
 }
 
-.project .img {
-  height: 15rem;
+.project .img{
+  height: 20rem;
+  object-fit: cover;
   border-top-right-radius: var(--borderRadius);
   border-top-left-radius: var(--borderRadius);
 }
 
-.project h5 {
+.project h5{
   text-align: center;
   padding: 1rem 0;
   color: var(--grey-700);
 }
 
-@media (min-width: 768px) {
-  .projects-center {
+@media (min-width:768px) {
+  .projects-center{
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 992px) {
-  .projects-center {
+@media (min-width:992px) {
+    .projects-center{
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
